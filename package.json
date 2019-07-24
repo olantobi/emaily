@@ -8,7 +8,7 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
-    "start": "babel src/ -d lib/ && node lib/server.js"
+    "start": "node lib/server.js"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
