@@ -1,0 +1,27 @@
+{
+  "name": "emaily",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "Tobi Olanrewaju",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "start": "babel src/ -d lib/ && node lib/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.103.0"
+  }
+}
