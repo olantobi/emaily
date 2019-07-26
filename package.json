@@ -5,11 +5,16 @@
   "author": "Tobi Olanrewaju",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": "12.5.0",
+    "yarn": "1.16.0"
+  },
   "scripts": {
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
     "start": "node lib/server.js",
-    "start:dev": "babel src/ -d lib/ && node lib/server.js"
+    "start:dev": "babel src/ -d lib/ && node lib/server.js",
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
